@@ -1,7 +1,7 @@
 from arbolFranco import BinaryTree, get_value_from_file
 from random import randint
 
-file_creatures = open("Trabajos/arbol/prueba/criaturas.txt")
+file_creatures = open("EntregaTP5/arbol/prueba/criaturas.txt")
 read_lines = file_creatures.readlines()
 file_creatures.close()
 
@@ -15,11 +15,11 @@ for index, linea_creatures in enumerate(read_lines):
 
 # inorden list of creatures and who defeated them
 def list_inorden_creatures():
-    creatures_tree.inorden_creatures("Trabajos/arbol/prueba/criaturas.txt")
+    creatures_tree.inorden_creatures("EntregaTP5/arbol/prueba/criaturas.txt")
 
 #Add description for creatures
 def _add_description():
-    new_lines = creatures_tree.add_description("Trabajos/arbol/prueba/criaturas.txt")
+    new_lines = creatures_tree.add_description("EntregaTP5/arbol/prueba/criaturas.txt")
 
     file_creatures_copy = open("Trabajos/arbol/prueba/criaturas.txt", "w")
     file_creatures_copy.writelines(new_lines)
@@ -27,23 +27,23 @@ def _add_description():
 
 #Show talos information
 def search_talos():
-    creatures_tree.search_talos("Trabajos/arbol/prueba/criaturas.txt")
+    creatures_tree.search_talos("EntregaTP5/arbol/prueba/criaturas.txt")
 
 #3 heroes who defeated the most number of creatures.
 def tops_heroes():
-    creatures_tree.contar_heroes("Trabajos/arbol/prueba/criaturas.txt")
+    creatures_tree.contar_heroes("EntregaTP5/arbol/prueba/criaturas.txt")
 
 #list creatures defeated by heracles
 def kill_heracles():
-    creatures_tree.kills_Heracles("Trabajos/arbol/prueba/criaturas.txt")
+    creatures_tree.kills_Heracles("EntregaTP5/arbol/prueba/criaturas.txt")
 
 #list undefeated creatures
 def undefeated():
-    creatures_tree.undefeated_creatures("Trabajos/arbol/prueba/criaturas.txt")
+    creatures_tree.undefeated_creatures("EntregaTP5/arbol/prueba/criaturas.txt")
 
 #load captured field
 def load_captured():
-    creatures_tree.load_captured("Trabajos/arbol/prueba/criaturas.txt")
+    creatures_tree.load_captured("EntregaTP5/arbol/prueba/criaturas.txt")
 
 #modifies who defeated the creatures
 def modifies_creatures():
